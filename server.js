@@ -4,7 +4,6 @@ const fs = require('fs');
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3001;
-// Not sure this port would be right when using Heroku
 
 const notesData = require('./db.json');
 

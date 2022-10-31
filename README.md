@@ -1,46 +1,41 @@
-# Software Engineering Team
+# Note-Taker
 
 ## Description
 
-* The repository shows a Node.js command-line application that takes in information about employees on a software engineering team,then generates an HTML webpage that displays summaries for each person.  It has a responsive user interface to be laid out properly on various size screens.
+* The repository shows an application called Note-Taker that can be used to write and save notes. This application uses an Express.js back end and saves and retrieves note data from a JSON file.
 
 ## Functionality
 
-* From the command line, the user is prompted for information that will generate cards for their team members, including an employee, manager, engineer and intern.  The user is asked questions relating to the team members, including their names, roles and email addresses.  In addition to these questionos which are asked, questions will be asked to retrieve the following: the office number ID for the manager; the github address of the engineer; and the schoool attended by the intern. 
+* The application has been deployed to Heroku at the link: https://c-alan-note-taker.herokuapp.com/  
 
-* The application will be invoked by using the following command in the terminal: node index.js
+* When the application is opened to the url for the home page, there is an option to click on:  "Get Started".  Upon clicking on "Get Stated" a page is opened showing the entered notes.  I can select the plus sign on the top right to create a new note with a title and note text.  Empty fields are show where I can enter the title and note text.  After I have added the note a save icon appears.  When I click the save icon the note is saved on the left-hand column with other existing notes.  When I click on and existing note in the list in the left-hand column the note appears in the right-hand column.
 
 ## Code
 
-* The command-line application will dynamically generate the file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) for Node.js.  
+* The application uses Express.js for the backend and a JSON file where notes data is saved and retrieved.  There are HTML routes for GET notes and POST notes.  Notes are stored with unique ID's in the JSON file.
 
-* The application uses [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user. 
-
-* The application includes Employee, Manager, Engineer, and Intern classes. The application runs tests for these classes (in the `_tests_` directory).
-
-* The project uses Bootstrap and Fontawesome, with links shown on the head section of the HTML.  There is also linked CSS stylesheet in the head section of the HTML. 
+* The project contains a "public" folder which contains a subfolder for the CSS, which contains a style.css file, and a subfolder for the JS, which contains an index.js file.  The project uses Bootstrap with links shown on the head section of the HTML.  There is also linked CSS stylesheet in the head section of the HTML. 
 
 * The HTML code contains a logical structure for the elements within the page.  There are sections within the body showing how the first page looks.
 
 * Comments have been applied to the different files in the code to identify each section of code. 
 
-## Code
-
-* There is an index.js file that lays out the code from which the README file is generated.  
+* There is server.js file which serves as the start point for application
 
 * Included is a package.json file with the required dependencies, as well as gitignore, node_modules and .DS_Store files.
 
 ## Installation
 
-* The code for this project can be found on GitHub at: https://github.com/c-alanwill/software-engineering-team
+* The code for this project can be found on GitHub at: https://github.com/c-alanwill/note-taker
 
-* A link to a video that shows a walkthrough demonstrating how this readme works is available at: https://drive.google.com/file/d/18AR4thXgKrAxyQcoxuTFmlIJY9Yr9OwO/view?usp=sharing
+* The deployed app is available at: https://c-alan-note-taker.herokuapp.com/
 
 ## Usage
 
 The following image demonstrates the web application's appearance and functionality:
 
-![My Team](./Assets/my-team.png)
+![Notes Page 1](./Assets/note-taker-homepage.png)
+![Notes Page 2](./Assets/notes-page.png)
 
 ## Credits
 
