@@ -2,9 +2,8 @@ const path = require('path');
 const fs = require('fs');
 // const uuid = require('./uuid.js')
 const express = require('express');
-// I don't understand need to have both lines 3 and 5 for express.
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 // Not sure this port would be right when using Heroku
 
 const notesData = require('./db.json');
